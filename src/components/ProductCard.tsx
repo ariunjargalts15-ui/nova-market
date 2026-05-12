@@ -75,4 +75,4 @@ export default function ProductCard({ product, adminMode, onDelete }: Props) {
                 </div>
           </motion.div>
         )
-      }</motion.div>
+}
