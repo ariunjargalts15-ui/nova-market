@@ -13,8 +13,8 @@ export default function App() {
           {/* Top Nav */}
                 <nav className="flex items-center justify-between px-8 py-4 max-w-[1400px] mx-auto">
                         <span className="font-display font-semibold text-xl text-[#0a1b33] tracking-tight">
-                                  HunnuX <span className="text-blue-500">Store</span>span>
-                        </span>span>
+                                  HunnuX <span className="text-blue-500">Store</span>
+                        </span>
                         <div className="flex gap-2">
                           {(['home', 'store', 'admin'] as Tab[]).map(t => (
                       <button
@@ -27,28 +27,28 @@ export default function App() {
                                       }`}
                                     >
                         {t.charAt(0).toUpperCase() + t.slice(1)}
-                      </button>button>
+                      </button>
                     ))}
-                        </div>div>
-                </nav>nav>
+                        </div>
+                </nav>
         
           {tab === 'home' && (
                   <main className="px-4 pb-16">
                             <Hero setTab={setTab} />
                             <Marquee />
                             <Store adminMode={false} />
-                  </main>main>
+                  </main>
               )}
           {tab === 'store' && (
                   <main className="px-4 pb-16 max-w-[1400px] mx-auto">
                             <Store adminMode={false} />
-                  </main>main>
+                  </main>
               )}
           {tab === 'admin' && (
                   <main className="px-4 pb-16 max-w-[1400px] mx-auto">
                             <Store adminMode={true} />
-                  </main>main>
+                  </main>
               )}
-        </div>div>
+        </div>
       )
 }</nav>
