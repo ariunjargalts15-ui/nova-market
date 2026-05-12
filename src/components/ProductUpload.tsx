@@ -71,26 +71,26 @@ export default function ProductUpload({ onAdd }: Props) {
                                                               className="absolute top-3 right-3 bg-white rounded-full p-1.5 shadow border border-slate-200 hover:bg-red-50 transition"
                                                             >
                                                             <X size={14} className="text-slate-400" />
-                                              </button>button>
-                                  </>>
+                                              </button>
+                                  </>
                                 ) : (
                                   <div className="flex flex-col items-center gap-3 p-8 text-center">
                                               <div className="w-16 h-16 bg-white rounded-full border border-slate-200 shadow-sm flex items-center justify-center">
                                                             <ImagePlus size={24} className="text-slate-400" />
-                                              </div>div>
+                                              </div>
                                               <p className="text-sm font-medium text-slate-500">
                                                             Drag &amp; drop your product image
-                                              </p>p>
-                                              <p className="text-xs text-slate-400">or click to browse</p>p>
-                                              <span className="text-xs bg-slate-100 text-slate-400 px-3 py-1 rounded-full">PNG, JPG, WEBP</span>span>
-                                  </div>div>
+                                              </p>
+                                              <p className="text-xs text-slate-400">or click to browse</p>
+                                              <span className="text-xs bg-slate-100 text-slate-400 px-3 py-1 rounded-full">PNG, JPG, WEBP</span>
+                                  </div>
                       )}
-              </div>div>
+              </div>
         
           {/* Form Fields */}
               <div className="flex flex-col gap-4">
                       <div>
-                                <label className="text-xs font-semibold text-slate-500 mb-1.5 block">Product Name *</label>label>
+                                <label className="text-xs font-semibold text-slate-500 mb-1.5 block">Product Name *</label>
                                 <input
                                               required
                                               value={name}
@@ -98,9 +98,9 @@ export default function ProductUpload({ onAdd }: Props) {
                                               placeholder="e.g. Premium Sneakers"
                                               className="w-full border border-slate-200 rounded-2xl px-4 py-3 text-sm outline-none focus:border-blue-300 bg-slate-50 font-sans"
                                             />
-                      </div>div>
+                      </div>
                       <div>
-                                <label className="text-xs font-semibold text-slate-500 mb-1.5 block">Description</label>label>
+                                <label className="text-xs font-semibold text-slate-500 mb-1.5 block">Description</label>
                                 <textarea
                                               value={description}
                                               onChange={e => setDescription(e.target.value)}
@@ -108,10 +108,10 @@ export default function ProductUpload({ onAdd }: Props) {
                                               rows={3}
                                               className="w-full border border-slate-200 rounded-2xl px-4 py-3 text-sm outline-none focus:border-blue-300 bg-slate-50 font-sans resize-none"
                                             />
-                      </div>div>
+                      </div>
                       <div className="grid grid-cols-2 gap-4">
                                 <div>
-                                            <label className="text-xs font-semibold text-slate-500 mb-1.5 block">Price ($) *</label>label>
+                                            <label className="text-xs font-semibold text-slate-500 mb-1.5 block">Price ($) *</label>
                                             <input
                                                             required
                                                             type="number"
@@ -122,26 +122,26 @@ export default function ProductUpload({ onAdd }: Props) {
                                                             placeholder="0.00"
                                                             className="w-full border border-slate-200 rounded-2xl px-4 py-3 text-sm outline-none focus:border-blue-300 bg-slate-50 font-sans"
                                                           />
-                                </div>div>
+                                </div>
                                 <div>
-                                            <label className="text-xs font-semibold text-slate-500 mb-1.5 block">Category</label>label>
+                                            <label className="text-xs font-semibold text-slate-500 mb-1.5 block">Category</label>
                                             <input
                                                             value={category}
                                                             onChange={e => setCategory(e.target.value)}
                                                             placeholder="e.g. Shoes"
                                                             className="w-full border border-slate-200 rounded-2xl px-4 py-3 text-sm outline-none focus:border-blue-300 bg-slate-50 font-sans"
                                                           />
-                                </div>div>
-                      </div>div>
+                                </div>
+                      </div>
                       <div>
-                                <label className="text-xs font-semibold text-slate-500 mb-1.5 block">Image URL (optional, overrides upload)</label>label>
+                                <label className="text-xs font-semibold text-slate-500 mb-1.5 block">Image URL (optional, overrides upload)</label>
                                 <input
                                               value={imageUrl}
                                               onChange={e => { setImageUrl(e.target.value); setPreview(e.target.value) }}
                                               placeholder="https://..."
                                               className="w-full border border-slate-200 rounded-2xl px-4 py-3 text-sm outline-none focus:border-blue-300 bg-slate-50 font-sans"
                                             />
-                      </div>div>
+                      </div>
                       <motion.button
                                   whileHover={{ scale: 1.03 }}
                                   whileTap={{ scale: 0.97 }}
@@ -150,7 +150,7 @@ export default function ProductUpload({ onAdd }: Props) {
                                 >
                                 <Upload size={15} /> Publish Product
                       </motion.button>motion.button>
-              </div>div>
-        </form>form>
+              </div>
+        </form>
       )
 }</></form>
