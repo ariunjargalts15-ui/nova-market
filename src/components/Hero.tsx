@@ -84,4 +84,4 @@ export default function Hero({ setTab }: Props) {
                 </div>
           </div>
         )
-}</div>
+}
