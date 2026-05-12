@@ -16,7 +16,7 @@ export default function Hero({ setTab }: Props) {
                                     playsInline
                                     className="w-full h-full object-cover scale-105 transition-transform duration-1000"
                                   />
-                </div>div>
+                </div>
           
             {/* Hero Text */}
                 <div className="relative z-20 flex-1 px-8 md:px-16 pt-12 md:pt-16 flex flex-col items-start">
@@ -30,13 +30,13 @@ export default function Hero({ setTab }: Props) {
                                                 style={{ color: '#0a1b33' }}
                                               >
                                               Welcome to<br />HunnuX Store
-                                  </h1>h1>
+                                  </h1>
                                   <p
                                                 className="font-sans text-[14px] md:text-[15px] max-w-[480px] mb-8 leading-relaxed"
                                                 style={{ color: '#64748b' }}
                                               >
                                               Discover premium products curated just for you. Upload your items, set your price, and start selling in minutes — all in one beautiful storefront.
-                                  </p>p>
+                                  </p>
                                   <motion.button
                                                 whileHover={{ scale: 1.04 }}
                                                 whileTap={{ scale: 0.97 }}
@@ -44,9 +44,9 @@ export default function Hero({ setTab }: Props) {
                                                 className="bg-[#0a152d] text-white font-semibold px-7 py-3 rounded-full text-sm shadow-lg hover:shadow-xl transition-shadow"
                                               >
                                               Shop Now
-                                  </motion.button>motion.button>
-                        </motion.div>motion.div>
-                </div>div>
+                                  </motion.button>
+                        </motion.div>
+                </div>
           
             {/* Floating Bottom Navbar */}
                 <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30">
@@ -59,19 +59,19 @@ export default function Hero({ setTab }: Props) {
                           {/* Logo */}
                                   <div className="w-9 h-9 bg-white border border-slate-100 shadow-sm rounded-full flex items-center justify-center text-[#0a1b33] font-bold text-base select-none">
                                               &#10022;
-                                  </div>div>
+                                  </div>
                                   <button
                                                 onClick={() => setTab('store')}
                                                 className="text-[12px] font-semibold text-slate-500 hover:text-[#0a1b33] transition-colors px-3 py-2"
                                               >
                                               Products
-                                  </button>button>
+                                  </button>
                                   <button
                                                 onClick={() => setTab('admin')}
                                                 className="text-[12px] font-semibold text-slate-500 hover:text-[#0a1b33] transition-colors px-3 py-2"
                                               >
                                               Sell / Admin
-                                  </button>button>
+                                  </button>
                                   <motion.button
                                                 whileHover={{ scale: 1.03 }}
                                                 whileTap={{ scale: 0.97 }}
@@ -79,9 +79,9 @@ export default function Hero({ setTab }: Props) {
                                                 className="bg-white px-5 py-2 rounded-full text-[12px] font-semibold text-[#0a1b33] border border-slate-200/60 shadow-sm hover:border-slate-300 transition-all flex items-center gap-1"
                                               >
                                               Browse Store <ChevronRight size={12} />
-                                  </motion.button>motion.button>
-                        </motion.nav>motion.nav>
-                </div>div>
-          </div>div>
+                                  </motion.button>
+                        </motion.nav>
+                </div>
+          </div>
         )
 }</div>
