@@ -28,29 +28,29 @@ export default function ProductCard({ product, adminMode, onDelete }: Props) {
                           ) : (
                             <div className="w-full h-full flex items-center justify-center text-5xl text-slate-200">
                                         📦
-                            </div>div>
+                            </div>
                         )}
                   {product.category && (
                             <span className="absolute top-3 left-3 bg-white/90 backdrop-blur text-xs font-semibold text-slate-600 px-3 py-1 rounded-full border border-slate-200/60 shadow-sm">
                               {product.category}
-                            </span>span>
+                            </span>
                         )}
-                </div>div>
+                </div>
           
             {/* Info */}
                 <div className="p-5 flex flex-col gap-2 flex-1">
                         <h3 className="font-display font-semibold text-[#0a1b33] text-base leading-snug line-clamp-2">
                           {product.name}
-                        </h3>h3>
+                        </h3>
                   {product.description && (
                             <p className="text-xs text-slate-400 font-sans leading-relaxed line-clamp-2">
                               {product.description}
-                            </p>p>
+                            </p>
                         )}
                         <div className="mt-auto pt-3 flex items-center justify-between">
                                   <span className="font-display font-semibold text-lg text-[#0a1b33]">
                                               ${Number(product.price).toFixed(2)}
-                                  </span>span>
+                                  </span>
                                   <div className="flex gap-2">
                                     {adminMode ? (
                                 <motion.button
@@ -60,7 +60,7 @@ export default function ProductCard({ product, adminMode, onDelete }: Props) {
                                                   className="bg-red-50 text-red-500 border border-red-100 hover:bg-red-500 hover:text-white transition-all px-3 py-2 rounded-full text-xs font-semibold flex items-center gap-1"
                                                 >
                                                 <Trash2 size={12} /> Delete
-                                </motion.button>motion.button>
+                                </motion.button>
                               ) : (
                                 <motion.button
                                                   whileHover={{ scale: 1.07 }}
@@ -68,11 +68,11 @@ export default function ProductCard({ product, adminMode, onDelete }: Props) {
                                                   className="bg-[#0a152d] text-white px-4 py-2 rounded-full text-xs font-semibold flex items-center gap-1 shadow hover:shadow-md transition-all"
                                                 >
                                                 <ShoppingCart size={12} /> Add to Cart
-                                </motion.button>motion.button>
+                                </motion.button>
                               )}
-                                  </div>div>
-                        </div>div>
-                </div>div>
-          </motion.div>motion.div>
+                                  </div>
+                        </div>
+                </div>
+          </motion.div>
         )
       }</motion.div>
