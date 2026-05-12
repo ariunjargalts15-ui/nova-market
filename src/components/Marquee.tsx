@@ -33,9 +33,9 @@ export default function Marquee() {
                                                   alt={logo.alt}
                                                   className="relative z-10 h-10 w-10 object-contain transition-all duration-300 group-hover:brightness-0 group-hover:invert"
                                                 />
-                      </div>div>
+                      </div>
                     ))}
-                  </div>div>
-          </div>div>
+                  </div>
+          </div>
         )
 }</div>
